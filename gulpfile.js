@@ -1,15 +1,38 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
-
 const uglifycss = require('gulp-uglifycss');
-
 const terser = require('gulp-terser');
+// const imagemin = require('imagemin');
+// const imageminJpegtran = require('imagemin-jpegtran');
+// const imageminPngquant = require('imagemin-pngquant');
+
+// import imagemin from 'imagemin';
+// import imageminJpegtran from 'imagemin-jpegtran';
+// import imageminPngquant from 'imagemin-pngquant';
+
+// const files = await imagemin(['images/*.{jpg,png}'], {
+//   destination: 'dist/assets/images',
+//   plugins: [
+//     imageminJpegtran(),
+//     imageminPngquant({
+//       quality: [0.6, 0.8],
+//     }),
+//   ],
+// });
+
+const htmlmin = require('gulp-htmlmin');
+
+function minify() {
+  return gulp
+    .src('./**/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist/'));
+}
 
 function es() {
   return gulp.src('./js/**/*.js').pipe(terser()).pipe(gulp.dest('./dist/'));
 }
-
 exports.default = es;
 
 function style() {
@@ -47,3 +70,4 @@ exports.style = style;
 exports.watch = watch;
 exports.mincss = mincss;
 exports.es = es;
+exports.minify = minify;
