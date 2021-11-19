@@ -1,0 +1,128 @@
+$primaryColor: #f72585;
+// $primaryColor: blue;
+$colorTwo: #b5179e;
+$colorThree: #7209b7;
+$colorFour: #4361ee;
+$funFactBtn: #4895ef;
+$colorSix: #4cc9f0;
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.custom-nav {
+  background-color: $primaryColor;
+}
+
+.hero-column {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  padding: 0;
+}
+
+.logo-header {
+  margin-bottom: 0;
+}
+
+.nav-logo {
+  width: 4rem;
+}
+
+.custom-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-fun-fact {
+  background-color: $funFactBtn;
+}
+
+.btn-fun-fact-page {
+  background-color: $funFactBtn;
+  width: 8rem;
+}
+
+.custom-footer {
+  background-color: $primaryColor;
+}
+.footer-logo {
+  width: 8rem;
+  padding: 0.5rem;
+}
+
+.copyright {
+  padding: 1.5rem;
+}
+
+.social-icon {
+  width: 4rem;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+}
+
+.hide-item {
+  display: none;
+}
+
+.fact-container {
+  position: absolute;
+  background-color: $colorSix;
+  opacity: 0.9;
+}
+
+.fact-info {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.fact-info2 {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.fact-container .closeBtn {
+  font-size: 2rem;
+  color: $primaryColor;
+}
+
+.close-button {
+  color: $colorTwo;
+  font-size: 2rem;
+}
+
+.fade-in {
+  animation-name: FadeIn;
+  animation-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.img-col img {
+  max-width: 100%;
+}
+
+.page-fact-container {
+  width: 24rem;
+  height: 14rem;
+  // background-color: $colorFour;
+  // color: #fff;
+}
+
+.movie-h2 {
+  background-color: $colorSix;
+  font-family: 'Road Rage', cursive;
+  font-size: 2rem;
+}

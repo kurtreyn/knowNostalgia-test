@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="know nostalgia portfolio project nucamp kurt reynolds"
+    />
+    <meta name="author" content="Kurt Reynolds" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+    </style>
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Know(Nostalgia)</title>
+  </head>
+
+  <body>
+    <!-- HERO CONTAINER -->
+    <header>
+      <div class="container-fluid">
+        <div class="row hero-row">
+          <div class="col-12 hero-column">
+            <img
+              src="../assets/images/videogame-banner.jpg"
+              class="img-fluid"
+              alt="hero image"
+            />
+          </div>
+          <div class="col-12 d-flex justify-content-center logo-column">
+            <img
+              src="../assets/images/know-video-games.png"
+              alt="header logo"
+              class="img-fluid logo-header"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/images/sunglasses.svg" alt="logo" class="nav-logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Select Interest
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/pages/movies.html">Movies</a>
+              <a class="dropdown-item" href="/pages/music.html">Music</a>
+              <a class="dropdown-item" href="/pages/tvshows.html">TV Shows</a>
+              <a class="dropdown-item" href="/pages/videogames.html"
+                >Video Games</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <div class="container">
+      <!-- FIRST ROW -->
+      <div class="row custom-row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
+          <img
+            src="../assets/images/video-games-god-of-war.jpg"
+            alt="god of war"
+          />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
+          <h2 class="movie-h2 badge-pill">God of War</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-container="god-of-war"
+          >
+            Developed by Santa Monica Studio and published by Sony Computer
+            Entertainment. First released on March 22, 2005, for the PlayStation
+            2 console.
+          </div>
+          <button
+            class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+            data-fact-button="god-of-war"
+          >
+            Find Out More
+          </button>
+        </div>
+      </div>
+      <!-- END FIRST ROW -->
+
+      <!-- SECOND ROW -->
+      <div class="row custom-row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
+          <img
+            src="../assets/images/video-games-half-life.jpg"
+            alt="half-life"
+          />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
+          <h2 class="movie-h2 badge-pill">Half-Life</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-container="half-life"
+          >
+            Developed by Valve and published by Sierra Studios for Windows in
+            1998. It was Valve's debut product and the first game in the
+            Half-Life series.
+          </div>
+          <button
+            class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+            data-fact-button="half-life"
+          >
+            Find Out More
+          </button>
+        </div>
+      </div>
+      <!-- END SECOND ROW -->
+
+      <!-- THIRD ROW -->
+      <div class="row custom-row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
+          <img
+            src="../assets/images/video-games-mario-64.jpeg"
+            alt="mario-64"
+          />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
+          <h2 class="movie-h2 badge-pill">Mario 64</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-container="mario"
+          >
+            A 1996 platform game for the Nintendo 64 and the first Super Mario
+            game to feature 3D gameplay. It was developed by Nintendo EAD and
+            published by Nintendo
+          </div>
+          <button
+            class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+            data-fact-button="mario"
+          >
+            Find Out More
+          </button>
+        </div>
+      </div>
+      <!-- END THIRD ROW -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <footer class="site-footer custom-footer">
+      <div class="container-fluid footer-container">
+        <div class="row">
+          <div class="col-4 col-sm-4 text-center">
+            <a href="http://facebook.com/">
+              <img
+                src="../assets/images/icon-facebook.svg"
+                alt="facebook icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://twitter.com/">
+              <img
+                src="../assets/images/icon-twitter.svg"
+                alt="twitter icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://youtube.com/">
+              <img
+                src="../assets/images/icon-youtube.svg"
+                alt="youtube icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://instagram.com/">
+              <img
+                src="../assets/images/icon-instagram.svg"
+                alt="instagram icon"
+                class="social-icon"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-4 text-center">
+            <p class="copyright">&copy; Kurt Reynolds, 2021</p>
+          </div>
+          <div class="col-4 col-sm-4 text-center">
+            <img
+              src="../assets/images/sunglasses.svg"
+              alt="logo"
+              class="footer-logo"
+            />
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- LOCAL SCRIPT -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
