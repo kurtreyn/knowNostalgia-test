@@ -46,3 +46,4 @@ async function mincss() {
 exports.style = style;
 exports.watch = watch;
 exports.mincss = mincss;
+exports.es = es;
