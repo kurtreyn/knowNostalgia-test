@@ -48,7 +48,7 @@ const setup = function () {
         para.innerText = facts.semiCharmed;
         containers[i].appendChild(para);
       } else if (attrib === 'dark-knight') {
-        para.innerText = facts.darkKnight;
+        para.innerText = facts.that70sShow;
         containers[i].appendChild(para);
       } else if (attrib === 'that-70s-show') {
         para.innerText = facts.that70sShow;
@@ -85,6 +85,7 @@ for (const btn of factBtns) {
   btn.addEventListener('click', setup);
 }
 
+//page start
 const factCont = document.querySelectorAll('[data-container]');
 const factPageBtns = document.querySelectorAll('[data-fact-button]');
 let curFB = '';
@@ -106,23 +107,27 @@ const pageSetup = function () {
     let originalText = factCont[y].innerText;
     let initBtnTxt = factPageBtns[y].innerText;
 
-    function delta() {
-      factCont[y].innerText = '';
-      factCont[y].classList.add('delta');
-      factPageBtns[y].innerText = 'close';
-      factCont[y].appendChild(para);
-    }
-
-    const unDelta = function () {
-      factCont[y].classList.remove('delta');
-      factCont[y].removeChild(para);
-      factCont[y].innerText = originalText;
-      factPageBtns[y].innerText = initBtnTxt;
-    };
-
     if (curCont === curFB) {
+      console.log(`current container is: ${curCont}`);
       console.log(`it's a match`);
       // console.log(factCont[y]);
+
+      function delta() {
+        factCont[y].innerText = '';
+        // factCont[y].classList.add('delta');
+        factPageBtns[y].innerText = 'close';
+        factCont[y].appendChild(para);
+        // console.log(`factContY is ${factCont[y]}`);
+      }
+
+      const unDelta = function () {
+        para.innerText = '';
+        factCont[y].innerText = originalText;
+        factPageBtns[y].innerText = initBtnTxt;
+        curFB = '';
+        curCont = '';
+        console.log(`curFB is now ${curFB} curCont is now ${curCont}`);
+      };
 
       switch (curCont) {
         case 'anchorman':
@@ -134,6 +139,7 @@ const pageSetup = function () {
           delta();
           break;
         case 'donnie-darko':
+          console.log(`current cont is now ${curCont}`);
           para.innerText = facts.donnieDarko;
           delta();
           break;
@@ -177,17 +183,18 @@ const pageSetup = function () {
           '';
       }
 
-      if ((factPageBtns.innerText = 'close')) {
-        for (const fpb of factPageBtns) {
+      for (const fpb of factPageBtns) {
+        if (fpb.innerText === 'close') {
           fpb.addEventListener('click', unDelta);
+        } else {
+          curCont = curFB;
         }
       }
     }
   }
-  curCont = factCont;
-  curFB = factPageBtns;
 };
 
 for (const fb of factPageBtns) {
+  console.log(`fb is ${fb}`);
   fb.addEventListener('click', pageSetup);
 }
